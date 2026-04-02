@@ -21,6 +21,9 @@ enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'logomenu@aryan_k', 'appind
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+# flatpaks
+flatpak list --columns=application
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
