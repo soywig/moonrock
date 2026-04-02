@@ -19,6 +19,14 @@ enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'logomenu@aryan_k', 'appind
 EOF
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+# remove flatpaks
+flatpak uninstall --system --noninteractive \
+  com.github.Matoking.protontricks \
+  com.github.tchx84.Flatseal \
+  com.ranfdev.DistroShelf \
+  com.vysp3r.ProtonPlus \
+  io.github.flattool.Warehouse
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
